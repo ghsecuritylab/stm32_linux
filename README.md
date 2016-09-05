@@ -12,3 +12,9 @@ https://www.udemy.com/embedded-system-programming-on-arm-cortex-m3m4/learn/v4/co
 (modified to stm32f420i discovery version). Original version (for stm32f407 discovery)
 can be found here : https://www.dropbox.com/s/9pqf204fm6yo0yo/Lab_src_code.rar?dl=0
 
+# Requirement
+- OpenOCD
+- http://github.com/texane/stlink.git
+- gdb-multiarch
+- GNU Toolchain
+
