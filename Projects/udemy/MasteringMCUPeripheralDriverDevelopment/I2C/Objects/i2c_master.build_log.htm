@@ -1,0 +1,126 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: kiran nayak, self, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.17
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\kiran\Desktop\Resources\Source_code\I2C_OLD\i2c_master.uvprojx
+Project File Date:  07/20/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling hal_gpio_driver.c...
+drivers\hal_gpio_driver.h(111): warning:  #1-D: last line of file ends without a newline
+  	#endif 
+drivers\hal_gpio_driver.c: 1 warning, 0 errors
+compiling i2c_main.c...
+.\drivers\hal_i2c_driver.h(227): warning:  #1-D: last line of file ends without a newline
+  #endif 
+.\drivers\hal_gpio_driver.h(111): warning:  #1-D: last line of file ends without a newline
+  	#endif 
+userApp\i2c_main.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\led\led.h(49): warning:  #1-D: last line of file ends without a newline
+  #endif 
+userApp\i2c_main.c(220): warning:  #223-D: function "memset" declared implicitly
+  		memset(slave_rx_buffer,0, sizeof(slave_rx_buffer));
+userApp\i2c_main.c(248): warning:  #111-D: statement is unreachable
+  	return 0;
+userApp\i2c_main.c(111): warning:  #177-D: variable "val" was declared but never referenced
+  	uint32_t val;
+userApp\i2c_main.c(288): warning:  #1-D: last line of file ends without a newline
+   
+userApp\i2c_main.c: 8 warnings, 0 errors
+compiling hal_i2c_driver.c...
+drivers\hal_i2c_driver.h(227): warning:  #1-D: last line of file ends without a newline
+  #endif 
+.\drivers\hal_gpio_driver.h(111): warning:  #1-D: last line of file ends without a newline
+  	#endif 
+..\led\led.h(49): warning:  #1-D: last line of file ends without a newline
+  #endif 
+drivers\hal_i2c_driver.c(41): warning:  #177-D: variable "Thigh" was declared but never referenced
+  	double Thigh, Tlow,  Tpclk;
+drivers\hal_i2c_driver.c(41): warning:  #177-D: variable "Tlow" was declared but never referenced
+  	double Thigh, Tlow,  Tpclk;
+drivers\hal_i2c_driver.c(41): warning:  #177-D: variable "Tpclk" was declared but never referenced
+  	double Thigh, Tlow,  Tpclk;
+drivers\hal_i2c_driver.c(225): warning:  #550-D: variable "val" was set but never used
+  	uint16_t val;
+drivers\hal_i2c_driver.c(342): warning:  #177-D: variable "val" was declared but never referenced
+  	uint32_t val;
+drivers\hal_i2c_driver.c: 8 warnings, 0 errors
+assembling startup_stm32f407xx.s...
+compiling led.c...
+.\drivers\hal_gpio_driver.h(111): warning:  #1-D: last line of file ends without a newline
+  	#endif 
+..\led\led.h(49): warning:  #1-D: last line of file ends without a newline
+  #endif 
+..\led\led.c: 2 warnings, 0 errors
+compiling i2c_int_handler.c...
+.\drivers\hal_i2c_driver.h(227): warning:  #1-D: last line of file ends without a newline
+  #endif 
+.\drivers\hal_gpio_driver.h(111): warning:  #1-D: last line of file ends without a newline
+  	#endif 
+..\led\led.h(49): warning:  #1-D: last line of file ends without a newline
+  #endif 
+userApp\i2c_int_handler.c(221): warning:  #550-D: variable "tmpreg" was set but never used
+  	uint32_t tmpreg;
+userApp\i2c_int_handler.c(229): warning:  #550-D: variable "tmpreg" was set but never used
+  	 uint32_t tmpreg;
+userApp\i2c_int_handler.c: 5 warnings, 0 errors
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=3304 RO-data=424 RW-data=32 ZI-data=1696  
+".\Objects\i2c_master.axf" - 0 Error(s), 24 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.7.0.pack
+                Keil::Device:Startup:2.4.2
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.4.2
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\kiran\Desktop\Resources\Source_code\I2C_OLD\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.7.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: Keil::Device:Startup:2.4.2
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

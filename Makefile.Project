@@ -10,7 +10,7 @@ STM32_LIB = $(MAINDIR)/Middlewares
 vpath %.c $(STM32_DRV)/STM32F4xx_HAL_Driver/Src $(STM32_DRV)/BSP/STM32F429I-Discovery $(MAINDIR)/ld
 #vpath %.h $(INC_DIRS)
 
-SRCS   += main.c
+//SRCS   += main.c
 
 CC 	= arm-none-eabi-gcc
 OBJCOPY = arm-none-eabi-objcopy
